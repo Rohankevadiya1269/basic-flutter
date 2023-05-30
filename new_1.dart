@@ -60,8 +60,10 @@ void main() {
 
 // let's see how to use variable inside string
   print('');
-  
 
+
+  
+// DATE: 30 MAY
   var uname = "Rohan";
   print(
       '$uname'); //this is illustration of how to use variable in quotes in print function
