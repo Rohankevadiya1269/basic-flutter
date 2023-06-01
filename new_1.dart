@@ -61,9 +61,7 @@ void main() {
 // let's see how to use variable inside string
   print('');
 
-
-  
-// DATE: 30 MAY
+// DATE:30 MAY
   var uname = "Rohan";
   print(
       '$uname'); //this is illustration of how to use variable in quotes in print function
@@ -164,8 +162,179 @@ void main() {
   print(employee.first); // returns the first element of the list
   print(employee.last); // returns the last element of the list
 
-  employee.remove("Rahul");   // It is used to remove the desired element
+  employee.remove("Rahul"); // It is used to remove the desired element
   print(employee);
-  employee.removeAt(2);  // You can also remove the element using index
+  employee.removeAt(2); // You can also remove the element using index
   print(employee);
+  print('');
+
+//DATE: 1 June
+
+//   -----------------> SETS
+// Set is a unordered collection of unique items
+//In list there can be duplicates, But in sets there are not duplicates present
+//In the sense elements cannot be repeated. Sets are mentioned in curly braces {}
+
+var st1={1,2,3,'King','Queen'};   //This is an example of set, Which returns the type of it as object as
+print(st1);                          // it contains both integers and string
+print(st1.runtimeType);
+
+var st2=<String>{'King','Queen'};   // You can also desribe the type of set you want
+print(st2);                         // For example we've mentioned string before the set, so it will only accept string 
+print(st2.runtimeType);             // and if we'll try to insert integers it will give error
+
+var st3=<int>{1,2,3,4,44};          // Just as we mentioned the string for above example we can also mention for int
+print(st3);                         // In this example, it will only accept integers and trying to enter string will give error
+print(st3.runtimeType);
+
+//you can also create set by using set keyword
+Set st4={"King","Queen",1,2,34};
+print(st4);
+print(st4.runtimeType);
+
+// Just as list you can also create empty set 
+
+// var st5 ={};
+// print(st5);
+// print(st5.runtimeType); // In type it shows map data type if you mention like this 
+
+//So to create an empty list you need to mention set keyword
+Set st6 = {};
+print(st6);
+print(st6.runtimeType);
+// ## you can also add items in empty sets just like lists
+st6.add('Goat');
+st6.add('King');
+st6.add('Master');
+print(st6); 
+
+//Sets can also be manipulated just as lists and has methods almost same as lists
+//They include .length, .isEmpty, .isNotEmpty, .reversed, .last, .first, etc
+//let us see length ,method illustration
+print(st6.length);
+print('');
+
+//    ------------------------> MAPS
+// Maps is a data type which consists key:value pair
+// In maps value can be repeatedgiven that key is unique
+
+var details= {
+  "name":"Rohan",
+  "city":"Ahmedadbad",
+  "state":"Gujarat"
+};
+print(details);
+print(details.runtimeType);
+// In maps key can be string or integer and the same goes with values
+// You can create empty maps using maps keyword, let us see
+
+//Empty Map
+Map address={};
+print(address);
+print(address.runtimeType);
+//This will create dynamic maps, but you can mention the type of dat inside it like
+// Map <String,String> address1={};
+// print(address1.runtimeType); ( This will create an empty map of key and value both of string datatype)
+ 
+ //We can add items in maps
+ address["City"]="Mumbai";
+ address["State"]="Maharashtra";
+ print(address);
+ print(address.runtimeType);
+
+ //Access The map element
+ print(address["City"]); // It will return the value of the the key you want to access, Mumbai in this case
+print('');
+ //## map properties
+ print(address.length);     // returns how many key:value pairs it consist
+ print(address.isEmpty);    // returns true if the map is empty
+ print(address.isNotEmpty); // returns true if the map is not empty
+ print(address.keys);       // returns all the keys that are in the map
+ print(address.values);     // returns all the values that are present in the map
+
+ // You can also check if the desired key or desired value is present or not
+ print(address.containsKey("City"));  // returns true if the name of the key entered is present in the map 
+ print(address.containsValue("Maharashtra"));  // returns true if the name of the value entered is present in the map 
+print('');
+
+//  ------------> CONTROL FLOW STATEMENT
+// IF ELSE
+var a = 10;
+if(a==10){
+  print("The value a is $a");
+}else{
+  print("Invalid Input");
+}
+//here the output will be"The value a is 10" because the value of a is 10
+// but if the value will not be 10 it will print "Invalid input"
+
+//...If...else if..else statement
+var b=20;
+if(b==20){
+  print("The value of b is 20");
+}
+else if(b==40){
+  print("The value of b is 40");
+}
+else{
+  print("The value of b is neither 20 nor 40");
+}
+ print('');
+// ------------> LOOPS
+
+//#For loop
+ var numlist = [1, 2, 3, 4, 5, 6, 7];
+ for(int i=0;i<numlist.length;i++){
+  print(numlist[i]);
+ }
+print('');
+
+//## WHILE loop
+var numlist1 = [1, 2, 3, 4, 5, 6, 7,8,9,10];
+var n=0;
+while(n<numlist1.length){
+var z=numlist1[n];
+print("number $z");
+n++;
+}
+print("");
+
+// ## DO WHILE loop
+var names1=["Sai","Hardik","Jayant","Mohit","Rohit","Vijay"];
+var k=0;
+do{
+  print(names1[k]);
+  k++;
+}while(k<names1.length);
+
+print("");
+// ## FOR IN loop
+
+var names2=["Ayush","Om","Smit","Vatsal","Shyam","Krish"];
+for(var nam in names2)
+{
+print(nam);
+}
+print("");
+// For-in loop is used in Sets and Maps
+// set
+var set1={"rutu","utkarsha","sakshi","Kisha"};
+for(var sts in set1){
+  print(sts);
+}
+print("");
+
+var details1={
+  "name":"Rohan",
+  "city":"Ahmedadbad",
+  "state":"Gujarat"
+};
+for(var key in details1.keys){
+  print(key);
+}
+for(var value in details1.values){
+  print(value);
+}
+
+
 }
