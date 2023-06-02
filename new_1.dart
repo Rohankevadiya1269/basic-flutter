@@ -335,6 +335,52 @@ for(var key in details1.keys){
 for(var value in details1.values){
   print(value);
 }
+print("");
 
+// 2 JUNE
+// FOR Each loop
+//forEach loop with list
+var name2=["Ayush","Om","Smit","Vatsal"];
+name2.forEach((name)=>print(name));  //The function inside for loop is called anonymous function or arrow function
+print('');
+//forEach loop for set
+//The method is same for set also
+
+var student1={"Ayush","Om","Smit","Vatsal","Shyam"};
+student1.forEach((stu)=> print(stu));
+
+//ForEach loop in maps
+
+var details12={
+  "name":"Rohan",
+  "city":"Ahmedadbad",
+  "state":"Gujarat"
+};
+details12.forEach((keys, values)=>print("$keys : $values"));
+print('');
+
+// You can print index number of list beside it's item using for each loop in List
+//but for that purpose you need to change the list into maps first 
+var lst6=["Ayush","Om","Smit","Vatsal"];
+lst6.asMap().forEach((i, value)=> print('$i : $value'));
+print('');
+
+
+//    --------->  BREAK STATEMENT
+// Sometimes the loop keeps on running for infinity and you need to stop it after desired iterations
+//To do so we can use break statement
+
+//for example if you are fetching data from any website, so the data is infinity 
+//and after 10 sec you need to quit fetching so you can use break statement
+
+var isfetching = true;    
+var j=0;   //It means data keeps on coming
+while(isfetching){
+  j++;
+  if(j==10){
+    break;
+  }
+  print("Data is fetching.. '$j'");
+}
 
 }
