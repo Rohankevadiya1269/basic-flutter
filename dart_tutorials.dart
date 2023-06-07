@@ -4,6 +4,8 @@
 // import 'dart:html';
 // import 'dart:io';
 
+// ignore_for_file: non_constant_identifier_names, avoid_function_literals_in_foreach_calls, duplicate_ignore
+
 void main() {
 // Creating variables
   var name = 'Rohan';
@@ -66,12 +68,13 @@ void main() {
 
 // DATE:30 MAY
   var uname = "Rohan";
-  print(
-      '$uname'); //this is illustration of how to use variable in quotes in print function
+  // ignore: unnecessary_string_interpolations
+  print( '$uname'); //this is illustration of how to use variable in quotes in print function
 //to print a variable in quotes you need to add a dollar $ sign before variable
   print('Hello, Greetings to all, My name is $uname');
 //you can also use the variable in string just as above expression
 //We can also use the variable inside the string using {}
+  // ignore: unnecessary_brace_in_string_interps
   print('Hello, Greetings to all, My name is ${uname}');
 // It is importanta to use {} when you use fuctions, let's understand it by example
   print('');
@@ -522,6 +525,7 @@ print(info);
 // // The function which doesn't have a name is called anonymous function, it is also called lambda function
 // //example of anonymous function is when we used for each loop previously in this code
   var stud = ['Kartik', 'Ranbir', 'Sid', 'Naina'];
+  // ignore: avoid_function_literals_in_foreach_calls
   stud.forEach((element) {
     print(element);
   });
@@ -530,6 +534,7 @@ print(info);
 // we can also use it by arrow function
 // # Arrow function
   var stud1 = ['Kartik', 'Ranbir', 'Sid', 'Naina'];
+  // ignore: avoid_function_literals_in_foreach_calls
   stud1.forEach((element) => print(element));
   print("");
 // 6 JUNE
@@ -564,6 +569,7 @@ print(info);
 
   var skoda = Automobile();
   skoda.carmodel("Skoda Kodiaq");
+  // ignore: non_constant_identifier_names
   var skoda_power = skoda.bhp;
   print("The horsepower of the skoda is : $skoda_power");
 
@@ -586,6 +592,7 @@ print(info);
   var obj = Mobile("Samsung M31s", 8);
   obj.show();
 
+  // ignore: unused_local_variable
   var obj1 = Mobile.memory(16);
 }
 
