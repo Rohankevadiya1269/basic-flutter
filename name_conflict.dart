@@ -7,8 +7,6 @@ import 'products/laptop.dart' as lap;
 // for example if there is a file called user.dart consisting usernames of an app, that consist numerous users
 // Let us see that if we need to see only users having name rahul
 
-
-
 // import 'app/users.dart' shows rahul;
 
 // But what if we need to all users except rahul, then we use 'hide' keyword
