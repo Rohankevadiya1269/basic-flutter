@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "621292433600",
+    "project_id": "blocauth-a3577",
+    "storage_bucket": "blocauth-a3577.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621292433600:android:14954afc0f33014ca3bd25",
+        "android_client_info": {
+          "package_name": "com.example.firebase_auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "621292433600-9gsamollefssbea0ih6k71eimncept4s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebase_auth",
+            "certificate_hash": "7651e138922de0c0011ee128e6ebe32365dbb405"
+          }
+        },
+        {
+          "client_id": "621292433600-3bueksp6o8kicms0ic8ng4b02mhg5muh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK_HOEqMuHOSN5N-0RA1P6e7FwvtYRxyM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "621292433600-3bueksp6o8kicms0ic8ng4b02mhg5muh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
